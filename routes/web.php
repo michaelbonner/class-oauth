@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('privacy-policy', function () {
+    return view('privacy-policy');
+});
 Route::get('login/uber', 'Auth\LoginController@redirectToProvider');
 Route::get('login/uber/callback', 'Auth\LoginController@handleProviderCallback');
