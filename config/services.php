@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'uber' => [
+        'client_id' => env('UBER_KEY'),
+        'client_secret' => env('UBER_SECRET'),
+        'redirect' => env('UBER_REDIRECT_URI')
+    ],
+
 ];

@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('login/uber', 'Auth\LoginController@redirectToProvider');
+Route::get('login/uber/callback', 'Auth\LoginController@handleProviderCallback');
